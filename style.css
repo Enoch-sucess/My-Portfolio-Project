@@ -172,7 +172,7 @@ button:hover {
   padding-top: 56.25%; 
 }
 
-.project video {
+.project .video-container a video {
   position: absolute;
   top: 0;
   left: 0;
