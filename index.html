@@ -51,7 +51,7 @@
           <div class="video-container">
             <a href="video1.html" target="_blank">
             <video src="./videos/loop website video - Made with Clipchamp.mp4"></video>
-            <div class="overlay"></div>
+<!--             <div class="overlay"></div> -->
             </a>
           </div>
           <h3>Loop studio Wesite Pratice</h3>
@@ -61,7 +61,7 @@
           <div class="video-container">
            <a href="video2.html" target="_blank">
             <video src="./videos/html website video - Made with Clipchamp.mp4"></video>
-            <div class="overlay"></div>
+<!--             <div class="overlay"></div> -->
            </a>
           </div>
           <h3>Html Css website Practice</h3>
@@ -71,7 +71,7 @@
           <div class="video-container">
             <a href="video3.html" target="_blank">
               <video src="./videos/shoe website video - Made with Clipchamp.mp4"></video>
-              <div class="overlay"></div>
+<!--               <div class="overlay"></div> -->
             </a>
           </div>
           <h3>Shoe Store Clone</h3>
@@ -81,7 +81,7 @@
           <div class="video-container">
            <a href="video4.html" target="_blank">
             <video src="./videos/create account video - Made with Clipchamp.mp4"></video>
-            <div class="overlay"></div>
+<!--             <div class="overlay"></div> -->
            </a>
           </div>
           <h3>Create Account Page Clone</h3>
@@ -91,7 +91,7 @@
           <div class="video-container">
             <a href="video5.html" target="_blank">
               <video src="./videos/login website video - Made with Clipchamp.mp4"></video>
-              <div class="overlay"></div>
+<!--               <div class="overlay"></div> -->
             </a>
           </div>
           <h3>Login Page Clone</h3>
@@ -101,7 +101,7 @@
           <div class="video-container">
             <a href="video6.html" target="_blank">
               <video src="./videos/explore website video - Made with Clipchamp.mp4"></video>
-              <div class="overlay"></div>
+<!--               <div class="overlay"></div> -->
             </a>
           </div>
           <h3>Explore Website Clone</h3>
@@ -146,17 +146,17 @@
     });
 
     // Add motion to project videos
-    // const projects = document.querySelectorAll('.project');
-    // projects.forEach(project => {
-    //   const video = project.querySelector('video');
-    //   project.addEventListener('click', () => {
-    //     if (video.paused) {
-    //       video.play();
-    //     } else {
-    //       video.pause();
-    //     }
-    //   });
-    // });
+    const projects = document.querySelectorAll('.project');
+    projects.forEach(project => {
+      const video = project.querySelector('video');
+      project.addEventListener('click', () => {
+        if (video.paused) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      });
+    });
 
     // Smooth Scroll Effect
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
