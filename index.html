@@ -168,6 +168,14 @@
       });
     });
 
+    // Autoplay videos on page load
+    window.addEventListener('load', () => {
+    const videos = document.querySelectorAll('.project video');
+    videos.forEach(video => {
+    video.play();
+     });
+   });
+
     // Animated Scroll Appear
     const fadeElements = document.querySelectorAll(".fade-in");
 
